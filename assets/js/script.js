@@ -7,13 +7,39 @@ function flipCard () {
     this.classList.add('flip')
 
     if (!turnCard) {
-        turnCard = true ;
+        turnCard = true;
         firstCard = this; 
-}   else {
-    turnCard = false ; 
-    secondCard= this;
 
-    console.log ({firstCard, secondCard})
-}
-}
-    cards. forEach(card => card.addEventListener('click', flipCard))
+    return; 
+    }
+    turnCard = false;
+    secondCard = this;
+    
+    checkMatch();
+    }
+
+
+    function checkMatch (){
+        let isMatch = firstCard.dataset.name ===
+            secondCard.dataset.name;
+
+            isMatch ? disableCards() : unflipCards();  
+    }
+     
+    function disableCards () {
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+    } 
+    
+    function unflipCards () {
+        setTimeout(() =>{
+            firstCard.classList.remove('flip');
+            secondCard.classList.remove('flip');
+    }, 1000);
+    }
+    
+
+
+
+    cards. forEach(card => card.addEventListener('click', flipCard)) 
+    
