@@ -20,7 +20,8 @@ body {
 p {
     font-size: 20px;
 }
- 
+
+
 h3 {
     color:yellow;
 }
@@ -65,12 +66,7 @@ img {
     transition: transform 500ms ease-in-out;
 }
 
-/* change size of card */
 
-.card:active {
-    transform: scale(95%);
-    transition: transform .3s;
-}
 
 /* to flip the card around */
 .card.flip {
@@ -93,4 +89,47 @@ img {
 .front-view {
     transform: rotateY(180deg);
 }
+
+.button  {
+    color:#146B3A;
+    background-color: yellow;
+    border: 3px #C30F16;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: red;
+}
+
+/* Modal Content */
+.modal-content {
+
+    background-color: #146B3A;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    width: 80%;
     
+  }
+  
+  /* The Close Button */
+  .close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+
+  
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-box {
+    color:yellow;
+}

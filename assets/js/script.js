@@ -1,4 +1,6 @@
 
+  
+
 
 const cards = document.querySelectorAll('.card') // For getting cards
 const resultDisplay = document.querySelector('#score') // To get my score
@@ -11,6 +13,7 @@ let firstCard, secondCard;
 
 // Function for Flip Card
 function flipCard () {
+
     if (lockBoard) return;
     if (this === firstCard) return;
     this.classList.add('flip')
@@ -42,8 +45,9 @@ function flipCard () {
     function disableCards () {
         firstCard.removeEventListener('click', flipCard);
         secondCard.removeEventListener('click', flipCard);
+    
     // to move score up one (still working in it)
-        resultDisplay.textContent = cardsWon.length     
+    resultDisplay.textContent = cardsChosen +1;
     }
      // function to  unflip card which will be active when two cards match
     //also to lock the board for a certain amount of time incase of user clicking too fast and making errors.
@@ -73,5 +77,31 @@ function flipCard () {
       })();
 
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  
     cards. forEach(card => card.addEventListener('click', flipCard)) 
     
