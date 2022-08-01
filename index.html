@@ -10,21 +10,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Link to CSS Style Sheet--> <!---->
 <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- Game Title-->
 <title>Christmas Game</title>
 
 </head>
 <body>
-
+    <!--Title of Game-->
 <h1 class = "heading"> Christmas Card Game!</h1>
 
-
+<div class = "rules"></div>
+<h3> <strong> How to Play</strong></h3>
+    <p> A simple kids memory game for christmas.
+        click on a card and then click on another card to see
+        if you have a match. If not the cards will turn back over.
+        When you do match one card with another one then you have completed one suit.
+        Keep going until you can match them all! <strong>Enjoy!</strong>
+    </p>
+    <br>
+    <!-- Information area-->
 <section class = "game-info-area">
-        <p>Time Remaining <span id="clock-remaining">120</span> </p> 
-        <p> Score <span id="score">0</span></p>
+        <p> Score <span id="score"></span></p>
 </section>
-
+    <!--game area for card details including images-->
 <section class ="game-area" >
     <div class ="card" data-name="bells">
         <img class = "front-view" src="assets/images/bells.png">
@@ -108,8 +117,10 @@
 </section>
 
 
-</section>
 
+
+</section>
+<!--Link to Javascript-->
 <script src="assets/js/script.js"></script>
 </body>
 </html>

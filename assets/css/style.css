@@ -1,9 +1,11 @@
-/* --------- Global style */
+/*  Global style */
 * {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
+
+/* detail for main body */
 
 body {
     background:radial-gradient(white,#C30F16);
@@ -13,19 +15,27 @@ body {
     min-height: 100vh;
 }
 
+/*detail for paragraph size */
+
 p {
     font-size: 20px;
 }
-    
+ 
+h3 {
+    color:yellow;
+}
+/* heading detail */
 .heading {
      font-size:  40px;
  }
 
+/* image size detail */
 img {
     height:110px;
     width:80px
 }
 
+/* detail for score area */
 .game-info-area {
     grid-column: 1 / -1;
     display: flex;
@@ -33,6 +43,7 @@ img {
     
 }
 
+/* detail for the card playing game area */
 .game-area {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -44,6 +55,7 @@ img {
        
 }
 
+/*  card detail */
 .card {
     position: relative;
     height: 120px;
@@ -53,14 +65,19 @@ img {
     transition: transform 500ms ease-in-out;
 }
 
+/* change size of card */
+
 .card:active {
     transform: scale(95%);
     transition: transform .3s;
 }
 
+/* to flip the card around */
 .card.flip {
     transform: rotateY(180deg);
 }
+
+/* size for the front and back of card with backface visibility hidden. */
 
 .front-view, .back-view {
     position: absolute;
@@ -72,6 +89,7 @@ img {
     backface-visibility: hidden;
 }
 
+/*  turn card back around */
 .front-view {
     transform: rotateY(180deg);
 }
