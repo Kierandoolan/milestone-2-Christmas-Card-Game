@@ -3,36 +3,40 @@ const cards = document.querySelectorAll('.card') // For getting cards
 const resultDisplay = document.querySelector('#score') // To get my score
 var score = 0;
 score++;
-
-
-
-  
+const timercount = document.querySelector("#timer");
 
 
 let turnCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+
+
 // Function for Flip Card
 function flipCard () {
-
     if (lockBoard) return;
     if (this === firstCard) return;
     this.classList.add('flip')
+    startTimer();
+      
 
     if (!turnCard) {
         turnCard = true;
         firstCard = this; 
-
+        
     return; 
     }
+
     turnCard = false;
     secondCard = this;
     //check if the cards are a match with my checkMatch Function
     checkMatch();
 
     
-    }
+
+  
+  }
+    
 
     
 
@@ -48,7 +52,7 @@ function flipCard () {
         firstCard.removeEventListener('click', flipCard);
         secondCard.removeEventListener('click', flipCard);
     
-    // to move score up one (still working in it)
+    // to move score up one 
     resultDisplay.textContent = score++;
     }
      // function to  unflip card which will be active when two cards match
@@ -78,6 +82,27 @@ function flipCard () {
         });
       })();
 
+    
+   
+let time;
+let seconds = 0;
+let Starttime = false;
+timercount.innerHTML = `${seconds}`;
+
+function startTimer(){
+    time = setInterval(() => {
+        seconds++;
+        timercount.innerHTML = seconds;
+    }, 1000);
+    
+}
+      
+        
+      
+      
+     
+
+  
 
 // Get the modal
 var modal = document.getElementById("myModal");
