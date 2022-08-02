@@ -1,10 +1,12 @@
 
-  
-
-
 const cards = document.querySelectorAll('.card') // For getting cards
 const resultDisplay = document.querySelector('#score') // To get my score
-var cardsChosen = [] // to have score at 0
+var score = 0;
+score++;
+
+
+
+  
 
 
 let turnCard = false;
@@ -47,7 +49,7 @@ function flipCard () {
         secondCard.removeEventListener('click', flipCard);
     
     // to move score up one (still working in it)
-    resultDisplay.textContent = cardsChosen +1;
+    resultDisplay.textContent = score++;
     }
      // function to  unflip card which will be active when two cards match
     //also to lock the board for a certain amount of time incase of user clicking too fast and making errors.

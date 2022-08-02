@@ -90,6 +90,7 @@ img {
     transform: rotateY(180deg);
 }
 
+/* button styling */
 .button  {
     color:#146B3A;
     background-color: yellow;
@@ -133,3 +134,16 @@ img {
 #modal-box {
     color:yellow;
 }
+
+@media (max-width: 300px) {
+    .game-area {
+      grid-template-columns: repeat(2, auto);
+    }
+  
+    .game-info-area {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
