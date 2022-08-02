@@ -14,28 +14,33 @@ let firstCard, secondCard;
 
 // Function for Flip Card
 function flipCard () {
-    if (lockBoard) return;
-    if (this === firstCard) return;
-    this.classList.add('flip')
-    startTimer();
-      
-
-    if (!turnCard) {
-        turnCard = true;
-        firstCard = this; 
-        
-    return; 
-    }
-
-    turnCard = false;
-    secondCard = this;
-    //check if the cards are a match with my checkMatch Function
-    checkMatch();
-
+  if (lockBoard) return;
+  if (this === firstCard) return;
+  this.classList.add('flip')
+  
     
 
-  
+  if (!turnCard) {
+      turnCard = true;
+      firstCard = this; 
+    
+  return; 
   }
+
+  turnCard = false;
+  secondCard = this;
+  //check if the cards are a match with my checkMatch Function
+  checkMatch();
+
+  
+
+
+}
+
+  
+
+  
+  
     
 
     

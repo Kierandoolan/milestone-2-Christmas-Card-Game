@@ -20,6 +20,7 @@ This is the main website for the site called The Christmas Game. It is designed 
 
         1. As a Returning Visitor, I want to play the game when i have free time.
         2. As a Returning Visitor, I want my kids to play the game to help with their memory exercises.
+        3. As a Returning Visitor, I want to see can i improve my time in completing the game and see can my friends beat me time.
     
 
 -   ### Design
@@ -41,27 +42,15 @@ This is the main website for the site called The Christmas Game. It is designed 
 
 -   Responsive on all device sizes
 
-## Screenshots (Do)
+## Screenshots 
 
-- Here is the logo of fuel, a easy to use navigation bar and the hero image of Fuel gym. The logo and navigation is consistant throughout.
+- The Website is very straightforward. This is the desktop view of the website with the cards turned around to see all the matching pairs.
 
-<h2 align="center"><img src="assets/images/logo-nav-hero.png"></h2>
+<h2 align="center"><img src="assets/images/desktop-responsive.png"></h2>
 
-- Here is information about the gym which would provide the user with the information they need.
+- This is a screen less than 300px and you can see media query has been shown to make to rows of cards for the user experience.
 
-<h2 align="center"><img src="assets/images/intro.png"></h2>
-
-- Here is the bottom of the pages that has the social media icons and the contact number. The footer is consistant throughout.
-
-<h2 align="center"><img src="assets/images/footer.png"></h2>
-
-- Here is one of the three classes on the class page, it gives a description, an image and a timetable of each class. The design is the same for the other classes on the page.
-
-<h2 align="center"><img src="assets/images/hiit.png"></h2>
-
--Here is the form to avail of one of the three classes with a background image. The details are required. 
-
-<h2 align="center"><img src="assets/images/form.png"></h2>
+<h2 align="center"><img src="assets/images/mobile-version.png"></h2>
 
 ### Languages Used
 
@@ -111,31 +100,21 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop and developer tools app which provides mock up phones  with responsive.
--   A large amount of testing was done to ensure that all pages were linking correctly.
--   I have tested all three webpages with Lighthouse and have maintained a high standard throughout for Performance, Accessibilty,
-    Best Pratice and SEO. Here is Screenshots of all three pages
+-   I have tested the webpage with Lighthouse and have maintained a high standard throughout for Performance, Accessibilty,
+    Best Pratice and SEO. 
 
-     <h3 align="center"><img src="assets/images/home-lighthouse.png"></h3>
-    
-
-      <h3 align="center"><img src="assets/images/classes-lighthouse.png"></h3>
-
-
-       <h3 align="center"><img src="assets/images/form-lighthouse.png"></h3>
+     <h3 align="center"><img src="assets/images/lighthouse-testing.png"></h3>
 
 
 
 ### Fixed Bugs (Do)
 
 -   I tried to put in a Christmas Song in the Background but due to autoplay policies tightening up this isn't possible. I was going to put in a click to play but i thought the song was quite annoying and would give the user a bad experience.
- <h2 align="center"><img src="assets/images/"></h2>
-To fixed this i deleted the image and downloaded it again at a bigger size which brought up the performance to 91.
- 
-- Had a issue with the form detail page that took me weeks to fix. Could not figure out why the form detail was taking up too much space. Found out with the help of a tutor that i had accidently put a style in for the radio button zumba that pushed it too the bottom as you can see in the next picture. 
-    <h2 align="center"><img src="assets/images/music-error.png"></h2>
+ <h2 align="center"><img src="assets/images/music-error.png"></h2>
 
+-   {write about the time }
 
-
+-   {write about the score }
 
 ## Deployment
 
