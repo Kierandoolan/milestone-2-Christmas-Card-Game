@@ -3,9 +3,8 @@ const cards = document.querySelectorAll('.card') // For getting cards
 const resultDisplay = document.querySelector('#score') // To get my score
 var score = 0;
 score++;
-const timercount = document.querySelector("#timer");
-
-
+const timercount = document.querySelector('#timer');
+var timerRunning= false;
 let turnCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -16,9 +15,14 @@ let firstCard, secondCard;
 function flipCard () {
   if (lockBoard) return;
   if (this === firstCard) return;
-  this.classList.add('flip')
+  this.classList.add('flip');
+
+  if (!timerRunning) {
+    timerRunning= true;
+     startTimer()
+    }
   
-    
+  
 
   if (!turnCard) {
       turnCard = true;
@@ -31,8 +35,6 @@ function flipCard () {
   secondCard = this;
   //check if the cards are a match with my checkMatch Function
   checkMatch();
-
-  
 
 
 }
@@ -50,7 +52,8 @@ function flipCard () {
         let isMatch = firstCard.dataset.name ===
             secondCard.dataset.name;
 
-            isMatch ? disableCards() : unflipCards();  
+            isMatch ? disableCards() : unflipCards(); 
+            
     }
      // If card are a match it will remove the function flip card and leave them as a match
     function disableCards () {
@@ -59,7 +62,12 @@ function flipCard () {
     
     // to move score up one 
     resultDisplay.textContent = score++;
+
     }
+    
+    
+    
+
      // function to  unflip card which will be active when two cards match
     //also to lock the board for a certain amount of time incase of user clicking too fast and making errors.
     function unflipCards () {
@@ -91,7 +99,6 @@ function flipCard () {
    
 let time;
 let seconds = 0;
-let Starttime = false;
 timercount.innerHTML = `${seconds}`;
 
 function startTimer(){
@@ -100,14 +107,13 @@ function startTimer(){
         timercount.innerHTML = seconds;
     }, 1000);
     
-}
-      
-        
-      
-      
-     
+
+  }
 
   
+
+       
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
