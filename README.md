@@ -74,8 +74,8 @@ This is the main website for the site called The Christmas Game. It is designed 
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkierandoolan.github.io%2Fproject-portfolio-1%2F)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2F8000-kierandoola-projectport-v2h5jb7a9n8.ws-eu45.gitpod.io%2Findex.html&usermedium=all&vextwarning=&warning=1)
+-   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-kierandoola-milestone2c-gv1kzjq4odu.ws-eu54.gitpod.io%2F)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-kierandoola-milestone2c-gv1kzjq4odu.ws-eu54.gitpod.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
 
 
 
@@ -96,7 +96,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         
 
 
-### Further Testing (Do)
+### Further Testing 
 
 -   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop and developer tools app which provides mock up phones  with responsive.
@@ -107,14 +107,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 
 
-### Fixed Bugs (Do)
+### Fixed Bugs
 
 -   I tried to put in a Christmas Song in the Background but due to autoplay policies tightening up this isn't possible. I was going to put in a click to play but i thought the song was quite annoying and would give the user a bad experience.
  <h2 align="center"><img src="assets/images/music-error.png"></h2>
 
--   {write about the time }
+-   When a user would click the card it would start the time but if they clicked another card it would increase the time faster. It has now been resovled.
 
--   {write about the score }
+-  When a user would match two cards it would score 1. but when they matched another two cards would stay at 1. This has also been resovled.
 
 ## Deployment
 
@@ -135,7 +135,7 @@ The project was deployed to GitHub Pages using the following steps...
 ### Code
 -  I had alot of difficult understanding Javascript and i still do. I'm hoping to keep praticing
     and to learn alot more throughout the course and outside the course. I relied alot in the 
-    understanding of it through serveral Youtubes. The YouTube Videos Included:
+    understanding of it through serveral Youtube Videos and Websites such as [W3schools](https://www.w3schools.com/howto/howto_css_modals.asp) AND [Stack Overflow](https://stackoverflow.com/). The YouTube Videos Included:
 
     -  [Code with Ania Kubów](https://youtu.be/tjyDOHzKN0w)
     -  [PortEXE](https://youtu.be/3uuQ3g92oPQ)

@@ -1,12 +1,15 @@
 
 const cards = document.querySelectorAll('.card') // For getting cards
 const resultDisplay = document.querySelector('#score') // To get my score
-var score = 0;
+var overLay = false;
+let score = 0; // Score number
 score++;
-const timercount = document.querySelector('#timer');
-var timerRunning= false;
-let turnCard = false;
-let lockBoard = false;
+const timercount = document.querySelector('#timer'); //grabbing the timer Id
+let time;
+let seconds = 0; //The seconds starting point
+var timerRunning= false; 
+let turnCard = false; 
+let lockBoard = false; // To lock the board. help from https://www.youtube.com/watch?v=ZniVgo8U7ek
 let firstCard, secondCard;
 
 
@@ -15,47 +18,38 @@ let firstCard, secondCard;
 function flipCard () {
   if (lockBoard) return;
   if (this === firstCard) return;
-  this.classList.add('flip');
+  this.classList.add('flip'); // to add flip class
 
-  if (!timerRunning) {
+  if (!timerRunning) {  
     timerRunning= true;
-     startTimer()
+     startTimer()   // to start the timer
+    }
+   // first click
+  if (!turnCard) {
+      turnCard = true; //change the varible turnCard to true
+      firstCard = this; 
+  return;  
     }
   
-  
-
-  if (!turnCard) {
-      turnCard = true;
-      firstCard = this; 
-    
-  return; 
-  }
-
+ // second click
   turnCard = false;
   secondCard = this;
+
   //check if the cards are a match with my checkMatch Function
   checkMatch();
 
 
 }
 
-  
-
-  
-  
-    
-
-    
-
  // The function to check if the matches are correct and if not to return back
     function checkMatch (){
         let isMatch = firstCard.dataset.name ===
             secondCard.dataset.name;
 
-            isMatch ? disableCards() : unflipCards(); 
+            isMatch ? disableCards() : unflipCards();  // The use of ternary operator with the help of freeCodeCamp.Org
             
     }
-     // If card are a match it will remove the function flip card and leave them as a match
+     // If card are a match it will remove the function flipC ard and leave them as a match
     function disableCards () {
         firstCard.removeEventListener('click', flipCard);
         secondCard.removeEventListener('click', flipCard);
@@ -63,6 +57,8 @@ function flipCard () {
     // to move score up one 
     resultDisplay.textContent = score++;
 
+    if(score === 1);
+    on ();
     }
     
     
@@ -73,7 +69,7 @@ function flipCard () {
     function unflipCards () {
         lockBoard = true;
 
-        setTimeout(() =>{
+        setTimeout(() =>{  //to allow enough time to flip
             
             firstCard.classList.remove('flip');
             secondCard.classList.remove('flip');
@@ -85,9 +81,9 @@ function flipCard () {
     //In aid to help any errors happening
     function doubleClick (){
     [turnCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
+    [firstCard, secondCard] = [null, null]; // The es6 destructuring assignment to keep code small learned from freeCampCode.Org
     }
-    // To shuffle the cards at the start of the game
+    // To shuffle the cards at the start of the game help from https://www.youtube.com/watch?v=ZniVgo8U7ek
     (function shuffle() {
         cards.forEach(card => {
           let mixUp = Math.floor(Math.random()  * 12);
@@ -96,9 +92,7 @@ function flipCard () {
       })();
 
     
-   
-let time;
-let seconds = 0;
+   // To start timer from 0 seconds
 timercount.innerHTML = `${seconds}`;
 
 function startTimer(){
@@ -110,36 +104,39 @@ function startTimer(){
 
   }
 
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+    
   
+     
+  
+    
+    
+    
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
 
        
+// Aid from https://www.w3schools.com/howto/howto_css_modals.asp
 
-
-// Get the modal
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-  
     cards. forEach(card => card.addEventListener('click', flipCard)) 
     
