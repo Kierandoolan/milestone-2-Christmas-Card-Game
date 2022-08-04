@@ -4,6 +4,7 @@ const resultDisplay = document.querySelector('#score') // To get my score
 var overLay = false;
 let score = 0; // Score number
 score++;
+var totalScore;
 const timercount = document.querySelector('.timer'); //grabbing the timer Id
 let time;
 let seconds = 0; //The seconds starting point
@@ -59,7 +60,7 @@ function flipCard () {
 
     if(score === 1);
     overlayOn ();
-    stopTime() 
+    stopTime();
     }
     
     

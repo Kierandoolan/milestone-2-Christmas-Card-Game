@@ -33,7 +33,7 @@ This is the main website for the site called The Christmas Game. It is designed 
 
 *   ### Wireframes (Do)
 
-    -   All wireframes are located here [here](readme/docs/wireframes.pdf).
+    -   All wireframes are located here [here](readme/wireframe-project.bmpr).
     -   I have added timetables into the actual website which is not on the wireframes.
     -   Tablet wireframes were not added as it is the same as desktop viewing.
 
