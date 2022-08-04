@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="A christmas memory game designed for children"/>
 
-
+<script src="https://kit.fontawesome.com/92d5eff406.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
@@ -19,13 +19,13 @@
 </head>
 <body>
     <!--Title of Game-->
-<h1 class = "heading"> Christmas Card Game!</h1>
-
+<h1 class = "heading">
+    <i class="fa-solid fa-candy-cane" ></i> Christmas Card Game!
+    <i class="fa-solid fa-candy-cane"></i>
+</h1>
 <!-- Trigger/Open The Modal -->
 <button id="myBtn" class="button">How To Play</button>
 
-<div id="overlay"> <p> Congratulations on Completing the Game, Please refresh the Page if you want to play more! </p>
-</div>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -40,12 +40,18 @@
         Keep going until you can match them all! Enjoy and Merry Christmas!</p>
   </div>
 
+  <div id="overlay"> <p> Congratulations on Completing the Game,
+    You got a time of: <span class="">0</span> refresh the page to play more! </p>
+</div>
+
 </div>
     <!-- Information area-->
 <div class = "game-info-area">
-        <p> Score: <span id="score"></span></p>
-        <p> Time:<span id="timer">0</span></p>
+        <p> Score: <span id="score">0</span></p>
+        <p> Time:<span class="timer">0</span></p>
 </div>
+
+
     <!--game area for card details including images-->
 <div class ="game-area" >
     <div class ="card" data-name="bells">
@@ -128,7 +134,7 @@
         <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
     </div>
 </div>
-    
+
 
 
 <!--Link to Javascript-->

@@ -4,7 +4,7 @@ const resultDisplay = document.querySelector('#score') // To get my score
 var overLay = false;
 let score = 0; // Score number
 score++;
-const timercount = document.querySelector('#timer'); //grabbing the timer Id
+const timercount = document.querySelector('.timer'); //grabbing the timer Id
 let time;
 let seconds = 0; //The seconds starting point
 var timerRunning= false; 
@@ -58,8 +58,10 @@ function flipCard () {
     resultDisplay.textContent = score++;
 
     if(score === 1);
-    on ();
+    overlayOn ();
+    stopTime() 
     }
+    
     
     
     
@@ -100,28 +102,20 @@ function startTimer(){
         seconds++;
         timercount.innerHTML = seconds;
     }, 1000);
-    
-
   }
 
-  function on() {
+  // function to stop the time
+  function stopTime() {
+    clearInterval(time);
+}
+
+// function to turn on overlay help from https://www.w3schools.com/howto/howto_css_overlay.asp
+  function overlayOn() {
     document.getElementById("overlay").style.display = "block";
     
-  
-     
-  
-    
-    
-    
-  }
-  
-  function off() {
-    document.getElementById("overlay").style.display = "none";
   }
 
-       
 // Aid from https://www.w3schools.com/howto/howto_css_modals.asp
-
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];

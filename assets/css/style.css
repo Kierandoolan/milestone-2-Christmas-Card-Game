@@ -111,18 +111,17 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     z-index: 2; 
     
   }
 
   #overlay p {
-    padding:300px;
-    font-size: 100px;
-    color: #ff0008;
+    
+    font-size: 80px;
+    color: #cce013;
   }
 
-  
 
 /* Modal Content */
 .modal-content {
