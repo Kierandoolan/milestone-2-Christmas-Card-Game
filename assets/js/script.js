@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll('.card') // For getting cards
 const resultDisplay = document.querySelector('#score') // To get my score
 var overLay = false;
-let score = 0; // Score number
+let score = null; // Score number
 score++;
 var totalScore;
 const timercount = document.querySelector('.timer'); //grabbing the timer Id
@@ -61,14 +61,17 @@ function flipCard () {
     
     // to move score up one 
     resultDisplay.textContent = score++;
-
-    if(score === 1);
+    
+    if(score === 9) {
     stopTime();
     overlayOn ();
-
+    }
     }
     
-;
+    // Aid from https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-button
+    function refreshPage(){
+      window.location.reload();
+  } 
 
     
     
@@ -113,7 +116,9 @@ function startTimer(){
     console.log('time', time);
   }
 
+ 
   // function to stop the time
+  
   function stopTime() {
     clearInterval(time);
             time = timercount.innerHTML
@@ -126,11 +131,10 @@ function startTimer(){
 // function to turn on overlay help from https://www.w3schools.com/howto/howto_css_overlay.asp
   function overlayOn() {
     document.getElementById("overlay").style.display = "block";
-
+    
     const end_time= localStorage.getItem('timer');
     console.log('end_time', end_time)
     document.getElementById("endtimer").innerHTML = end_time;
-    
   }
 
 // Aid from https://www.w3schools.com/howto/howto_css_modals.asp
