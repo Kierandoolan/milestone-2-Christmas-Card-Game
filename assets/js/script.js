@@ -1,4 +1,3 @@
-
 const cards = document.querySelectorAll('.card') // For getting cards
 const resultDisplay = document.querySelector('#score') // To get my score
 var overLay = false;
@@ -6,12 +5,17 @@ let score = 0; // Score number
 score++;
 var totalScore;
 const timercount = document.querySelector('.timer'); //grabbing the timer Id
-let time;
+let time = null;
 let seconds = 0; //The seconds starting point
 var timerRunning= false; 
 let turnCard = false; 
 let lockBoard = false; // To lock the board. help from https://www.youtube.com/watch?v=ZniVgo8U7ek
 let firstCard, secondCard;
+// const endTime= localStorage.getItem('timer');
+// document.getElementById("endtimer").innerHTML = endTime;
+
+
+
 
 
 
@@ -59,10 +63,13 @@ function flipCard () {
     resultDisplay.textContent = score++;
 
     if(score === 1);
-    overlayOn ();
     stopTime();
+    overlayOn ();
+
     }
     
+;
+
     
     
     
@@ -99,20 +106,30 @@ function flipCard () {
 timercount.innerHTML = `${seconds}`;
 
 function startTimer(){
-    time = setInterval(() => {
-        seconds++;
-        timercount.innerHTML = seconds;
-    }, 1000);
+  time = setInterval(function () {
+    seconds += 1;
+    timercount.innerHTML = seconds;
+}, 1000);
+    console.log('time', time);
   }
 
   // function to stop the time
   function stopTime() {
     clearInterval(time);
+            time = timercount.innerHTML
+            timercount.innerHTML = '0';
+    localStorage.setItem('timer', time);
+    
+    
 }
 
 // function to turn on overlay help from https://www.w3schools.com/howto/howto_css_overlay.asp
   function overlayOn() {
     document.getElementById("overlay").style.display = "block";
+
+    const end_time= localStorage.getItem('timer');
+    console.log('end_time', end_time)
+    document.getElementById("endtimer").innerHTML = end_time;
     
   }
 
@@ -134,4 +151,3 @@ window.onclick = function(event) {
   }
 }
     cards. forEach(card => card.addEventListener('click', flipCard)) 
-    
