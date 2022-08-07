@@ -52,12 +52,12 @@ function flipCard () {
             isMatch ? disableCards() : unflipCards();  // The use of ternary operator with the help of freeCodeCamp.Org
             
     }
-     // If card are a match it will remove the function flipC ard and leave them as a match
+     // If card are a match it will remove the function flipCard and leave them as a match
     function disableCards () {
         firstCard.removeEventListener('click', flipCard);
         secondCard.removeEventListener('click', flipCard);
     
-    // to move score up one 
+    // To move score up one 
     resultDisplay.textContent = score++;
     
     if(score === 9) {
