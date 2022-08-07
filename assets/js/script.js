@@ -1,9 +1,8 @@
-const cards = document.querySelectorAll('.card') // For getting cards
-const resultDisplay = document.querySelector('#score') // To get my score
-var overLay = false;
+
+const cards = document.querySelectorAll('.card'); // For getting cards
+const resultDisplay = document.querySelector('#score'); // To get my score
 let score = null; // Score number
 score++;
-var totalScore;
 const timercount = document.querySelector('.timer'); //grabbing the timer Id
 let time = null;
 let seconds = 0; //The seconds starting point
@@ -11,8 +10,7 @@ var timerRunning= false;
 let turnCard = false; 
 let lockBoard = false; // To lock the board. help from https://www.youtube.com/watch?v=ZniVgo8U7ek
 let firstCard, secondCard;
-// const endTime= localStorage.getItem('timer');
-// document.getElementById("endtimer").innerHTML = endTime;
+
 
 
 
@@ -27,7 +25,7 @@ function flipCard () {
 
   if (!timerRunning) {  
     timerRunning= true;
-     startTimer()   // to start the timer
+     startTimer();   // to start the timer
     }
    // first click
   if (!turnCard) {
@@ -88,7 +86,7 @@ function flipCard () {
             secondCard.classList.remove('flip');
 
     // timer set for doubleClick Function
-            doubleClick ()
+            doubleClick ();
     }, 1000);
     }
     //In aid to help any errors happening
@@ -121,7 +119,7 @@ function startTimer(){
   
   function stopTime() {
     clearInterval(time);
-            time = timercount.innerHTML
+            time = timercount.innerHTML;
             timercount.innerHTML = '0';
     localStorage.setItem('timer', time);
     
@@ -133,7 +131,7 @@ function startTimer(){
     document.getElementById("overlay").style.display = "block";
     
     const end_time= localStorage.getItem('timer');
-    console.log('end_time', end_time)
+    console.log('end_time', end_time);
     document.getElementById("endtimer").innerHTML = end_time;
   }
 
@@ -144,14 +142,14 @@ var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
   modal.style.display = "block";
-}
+};
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
-    cards. forEach(card => card.addEventListener('click', flipCard)) 
+};
+    cards. forEach(card => card.addEventListener('click', flipCard)); 

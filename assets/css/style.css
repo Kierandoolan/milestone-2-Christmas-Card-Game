@@ -98,17 +98,20 @@ img {
     border-radius: 5px;
 }
 
+.button:hover {
+  color: red;
+}
+/* restart button*/
+
 .restart {
   font-size: 30px;
   color: yellow;
   background-color: #C30F16;
-  border: 3px #146B3A;
+  border: yellow solid 2px;
   border-radius: 5px;
 }
-.button:hover {
-    color: red;
-}
 
+/*overlay detail when game finishes*/
 #overlay {
     position: fixed; 
     display: none;
@@ -122,22 +125,26 @@ img {
     z-index: 2; 
     
   }
-
+/*overlay paragraph */
   #overlay p {
-    
     font-size: 70px;
     color: #cce013;
     margin-top: 100px;
     text-align: center;
     padding: 0 40px;
   }
-
+ /* scores color */
   #endtimer {
     color: #C30F16;
   }
 
+/* modal box color */
+  #modal-box {
+    color:yellow;
+}
+
 /* Modal Content */
-.modal-content {
+  .modal-content {
 
     background-color: #146B3A;
     margin: auto;
@@ -156,7 +163,7 @@ img {
     font-weight: bold;
   }
   
-
+/* color when hovering over close button*/
   
 .close:hover,
 .close:focus {
@@ -165,9 +172,7 @@ img {
   cursor: pointer;
 }
 
-#modal-box {
-    color:yellow;
-}
+/* media query */
 
 @media (max-width: 800px) {
   #overlay p {

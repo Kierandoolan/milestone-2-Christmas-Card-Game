@@ -6,6 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="A christmas memory game designed for children"/>
 
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/static/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/static/site.webmanifest">
 <script src="https://kit.fontawesome.com/92d5eff406.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +28,7 @@
     <i class="fa-solid fa-candy-cane" ></i> Christmas Card Game!
     <i class="fa-solid fa-candy-cane"></i>
 </h1>
-<!-- Trigger/Open The Modal -->
-
+<!-- Modal for rules and restart game -->
 <button id="myBtn" class="button">How To Play</button>
 <button type="button" class="button" onClick="refreshPage()">Restart Game</button>
 
@@ -49,59 +53,59 @@
         <p> Time:<span class="timer">0</span></p>
 </div>
 
- <!-- Overlay area-->
+ <!-- Overlay end of game message-->
  <div id="overlay"> <p> Congratulations on Completing the Game,
     You got a time of: <span id="endtimer">0</span>. Press the button below to try beat your score! </p>
     <br>
-    <button type="button" class="restart" onClick="refreshPage()"> You can do better!</button>
+    <button type="button" class="restart" onClick="refreshPage()"> Click here to beat your score!</button>
 </div>
 
 
-    <!--game area for card details including images-->
+    <!--Game area for card details including images-->
 <div class ="game-area" >
     <div class ="card" data-name="bells">
-        <img class = "front-view" src="assets/images/bells.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/bells.png" alt="bells">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="bells">
-        <img class = "front-view" src="assets/images/bells.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/bells.png" alt="bells">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="candycane">
-        <img class = "front-view" src="assets/images/candycane.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/candycane.png" alt="candycane">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
         
     <div class ="card" data-name="candycane">
-        <img class = "front-view" src="assets/images/candycane.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/candycane.png" alt="candycane">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="chimmley">
-        <img class = "front-view" src="assets/images/chimmley.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/chimmley.png" alt="santa-in-chimmley">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="chimmley">
-        <img class = "front-view" src="assets/images/chimmley.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/chimmley.png" alt="santa-in-chimmley">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="rudolf">
-        <img class = "front-view" src="assets/images/rudolf.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/rudolf.png" alt="rudolf">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="rudolf">
-        <img class = "front-view" src="assets/images/rudolf.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/rudolf.png" alt="rudolf">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="santa">
-        <img class = "front-view" src="assets/images/santa.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/santa.png" alt="santa">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="santa">
@@ -110,33 +114,33 @@
     </div>
 
     <div class ="card" data-name="snowman">
-        <img class = "front-view" src="assets/images/snowman.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/snowman.png" alt="snowman">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="snowman">
-        <img class = "front-view" src="assets/images/snowman.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/snowman.png" alt="snowman">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="toy">
-        <img class = "front-view" src="assets/images/toy.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/toy.png" alt="toy">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="toy">
-        <img class = "front-view" src="assets/images/toy.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/toy.png" alt="toy">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="tree">
-        <img class = "front-view" src="assets/images/tree.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/tree.png" alt="tree">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 
     <div class ="card" data-name="tree">
-        <img class = "front-view" src="assets/images/tree.png" alt="">
-        <img class = "back-view"  src="assets/images/christmas-card.png" alt="">
+        <img class = "front-view" src="assets/images/tree.png" alt="tree">
+        <img class = "back-view"  src="assets/images/christmas-card.png" alt="christmas-card">
     </div>
 </div>
 

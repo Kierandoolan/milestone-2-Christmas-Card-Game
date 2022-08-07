@@ -19,7 +19,7 @@ This is the main website for the site called The Christmas Game. It is designed 
     -   #### Returning Visitor Goals
 
         1. As a Returning Visitor, I want to play the game when i have free time.
-        2. As a Returning Visitor, I want my kids to play the game to help with their memory exercises.
+        2. As a Returning Visitor, I want my kids to play the game to help improve with their memory skills
         3. As a Returning Visitor, I want to see can i improve my time in completing the game and see can my friends beat me time.
     
 
@@ -31,11 +31,11 @@ This is the main website for the site called The Christmas Game. It is designed 
     -   #### Imagery
         -   Imagery is important. I used eight different images to be christmas themed designed for younger users. 
 
-*   ### Wireframes (Do)
+*   ### Wireframes
 
     -   All wireframes are located here [here](assets/readme/wireframe.pdf).
-    -   I have added timetables into the actual website which is not on the wireframes.
-    -   Tablet wireframes were not added as it is the same as desktop viewing.
+    -   The wireframes added were the display screens for desktop, iPad and mobile. 
+
 
 
 ## Features
@@ -76,7 +76,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-kierandoola-milestone2c-gv1kzjq4odu.ws-eu54.gitpod.io%2F)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-kierandoola-milestone2c-gv1kzjq4odu.ws-eu54.gitpod.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
-
+- I also used [Jshint](https://jshint.com/) which has very little issues in the javascript.
 
 
 ### Testing User Stories from User Experience (UX) Section
@@ -85,14 +85,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the Game.
 
-        1. Upon entering the site, I found it was just a simple memory game that was christmas themed.
-        2. I can see there is Rules on how to play the game, Very easy to understand
+        1. Upon entering the site, I found it was a simple memory game that was christmas themed.
+        2. I can see there is rules on how to play the game, Very easy to understand
         
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
         1. The site pages are small and easy to read. Straight to the point and the user should find all of the information.
-        2. The page cards are interactive and Fun. Great for Kid users who would like to enjoy using the website
+        2. The page cards are interactive and fun. Great for kid users who would like to enjoy using the website.
         
 
 
@@ -115,6 +115,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   When a user would click the card it would start the time but if they clicked another card it would increase the time faster. It has now been resovled.
 
 -  When a user would match two cards it would score 1. but when they matched another two cards would stay at 1. This has also been resovled.
+<h2 align="center"><img src="assets/images/error-score.png"></h2>
+
+- When the user finished the game an overlay message which should show what time they completed the game in would appear. However the time would not show. This has now been resolved.
 
 ## Deployment
 
@@ -142,7 +145,9 @@ The project was deployed to GitHub Pages using the following steps...
     -  [freeCodeCamp.org](https://youtu.be/ZniVgo8U7ek)
     -  [Dev ED](https://youtu.be/-tlb4tv4mC4)
     
-
+###  Images
+- I got the back side of the playing card from [playingcarddecks.com](https://playingcarddecks.com/products/christmas-playing-cards-uspcc)
+- I got all the front side of the playing cards from [clipartmax.com](https://www.clipartmax.com/so/christmas/)
 
 
 ### Acknowledgements
