@@ -1,6 +1,6 @@
 <h1 align="center"> The Christmas Game</h1>
 
-[View the live project here.]()
+[View the live project here.]( https://kierandoolan.github.io/milestone-2-Christmas-Card-Game/)
 
 This is the main website for the site called The Christmas Game. It is designed to be responsive and accessible on a range of devices, making it easy to use for visitors of the page.
 
@@ -20,7 +20,7 @@ This is the main website for the site called The Christmas Game. It is designed 
 
         1. As a Returning Visitor, I want to play the game when i have free time.
         2. As a Returning Visitor, I want my kids to play the game to help improve with their memory skills
-        3. As a Returning Visitor, I want to see can i improve my time in completing the game and see can my friends beat me time.
+        3. As a Returning Visitor, I want to see can i improve my time in completing the game and see can my friends beat my time.
     
 
 -   ### Design
@@ -156,6 +156,6 @@ The project was deployed to GitHub Pages using the following steps...
 
 -   Tutor support at Code Institute for their support.
 
--   The Teachers at Code Institude for helpful videos and walk through project
+-   The Teachers at Code Institude for helpful videos and the walk through project called Love Maths.
 
 -   My collegues on the slack app who helped me when i had any issues.
