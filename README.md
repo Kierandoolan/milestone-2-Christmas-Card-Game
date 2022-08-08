@@ -1,4 +1,4 @@
-<h1 align="center"> The Christmas Game</h1>
+<h1 align="center"> The Christmas Card Game</h1>
 
 [View the live project here.]( https://kierandoolan.github.io/milestone-2-Christmas-Card-Game/)
 
